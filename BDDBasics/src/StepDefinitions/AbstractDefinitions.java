@@ -12,7 +12,7 @@ public class AbstractDefinitions {
 	static WebDriver driver;
 	@Given("^User has opened website in chrome$")
 	public void openBrowser() {
-		
+		System.out.println("Hi");
 		System.setProperty("webdriver.chrome.driver","D:\\EthansSelenium\\chromedriver_win32(1)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://newtours.demoaut.com");
